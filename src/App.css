@@ -9,7 +9,72 @@
 }
 
 h1 {
-    color: red;
-    font-size: 92px;
+    color: lightsalmon;
+    font-size: 72px;
     text-shadow: 1px 1px 10px #999;
+    padding: 30px;
+}
+
+.form-container {
+    background: #ffff;
+    /* here min-height is used instead of height */
+    /* this is so if contents length inc, the container height can adjust automatically */
+    min-height: 500px;
+    width: 500px;
+    box-shadow: 1px 1px 10px #999;
+    border-radius: 20px;
+    /* alignment property */
+    display: flex;
+    align-items: center;
+    /* to display the contents in center */
+    flex-direction: column;
+    gap: 50px;
+    padding: 40px;
+}
+
+.form-container > div {
+    width: 100%;
+}
+
+label {
+    display: block;
+    padding-bottom: 10px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.query-input {
+    font-size: 24px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    box-shadow: 1px 1px 10px #999;
+    border-radius: 10px;
+}
+
+.questions-input {
+    width: 100%;
+}
+
+.difficulty-level {
+    font-size: 24px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    box-shadow: 1px 1px 10px #999;
+    border-radius: 10px;
+}
+
+.submit-btn {
+    font-size: 20px;
+    padding: 10px;
+    background: linear-gradient(to right, blue, lightblue);
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(to left, blue, lightblue);
 }
